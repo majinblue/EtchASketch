@@ -1,23 +1,26 @@
 h1 {
     text-align: center;
+    margin-bottom: 0;
 }
 
 #ui {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 #controls {
-    border: 1px solid black;
-    padding: 3em;
-    margin-bottom: 2em;
+    padding: 2em;
+    text-align: center;
 }
 
 #grid {
     display: grid;
-    grid-template-columns: repeat(16, 2em);
-    grid-template-rows: repeat(16, 2em);
+    width: 650px;
+    height: 650px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: solid 1px black;
 
     /* Set the size of each cell element */
     /* grid-auto-rows: 1em; */
@@ -25,9 +28,9 @@ h1 {
 }
 
 .cell {
-    border: 1px black solid;
-    width: 2em;
-    height: 2em;
+    /* border: 1px black solid; */
+    width: 1fr;
+    height: 1fr;
 }
 
 /* .cell:hover {
